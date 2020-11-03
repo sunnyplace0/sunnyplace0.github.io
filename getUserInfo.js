@@ -4,7 +4,7 @@ $("#btn1").on("click", function()  {
     document.getElementById('eid_href').innerHTML = '現在開いているURL：' + window.location.href;
   //}
   //if (!window.location.search) {
-  //  document.getElementById('eid_search').innerHTML = 'URL内のクエリ情報：' + window.location.search;
+    //document.getElementById('eid_search').innerHTML = 'URL内のクエリ情報：' + window.location.search;
   //}
   //if (!widnow.location.hash) {
     document.getElementById('eid_hash').innerHTML = 'URL内のハッシュ情報：' + widnow.location.hash;
