@@ -1,9 +1,11 @@
 $("#btn1").on("click", function()  {
+  let ua = window.navigator.userAgent;
   let date = new Date();
   let year = date.getFullYear();
   let month = date.getMonth() + 1;
   let day = date.getDate();
-  let message = `¡“ú‚Í${year}”N${month}Œ${day}“ú‚Å‚·`
-  // jQuery‚ğg‚Á‚Ä‰æ–Ê‚ÉƒƒbƒZ[ƒW‚ğ•\¦‚·‚é
+  //let message = `ä»Šæ—¥ã¯${year}å¹´${month}æœˆ${day}æ—¥ã§ã™`
+  let message = ua
+  // jQueryã‚’ä½¿ã£ã¦ç”»é¢ã«ãƒ¡ãƒƒã‚»ãƒ¼ã‚¸ã‚’è¡¨ç¤ºã™ã‚‹
   $("#tBox").val(message);
 });
