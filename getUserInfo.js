@@ -7,6 +7,6 @@ $("#btn1").on("click", function()  {
   //let message = `今日は${year}年${month}月${day}日です`
   let message = `UserAgent:${ua}`
   // jQueryを使って画面にメッセージを表示する
-  document.getElementById('eid_ua').innerHTML = ua;
+  document.getElementById('eid_ua').innerHTML = window.navigator.userAgent;
   $("#tBox").val(message);
 });
