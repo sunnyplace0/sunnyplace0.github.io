@@ -1,4 +1,7 @@
 $("#btn1").on("click", function()  {
+  console.log("JavaScriptを実行しています");
+  console.log(window.navigator.userAgent);
+  console.log(window.document.referrer);
   let ua = window.navigator.userAgent;
   let date = new Date();
   let year = date.getFullYear();
