@@ -1,14 +1,14 @@
 $("#btn1").on("click", function()  {
   // jQueryを使って画面にメッセージを表示する
-  document.getElementById('eid_href').innerHTML = '現在開いているURL：' + window.location.href + window.navigator.userAgent; // 現在開いているURLを取得する
-  // document.getElementById('eid_search').innerHTML = window.location.search; // URL内のクエリ情報を抽出して取得する
-  // document.getElementById('eid_hash').innerHTML = widnow.location.hash; // URL内のハッシュ情報を抽出して取得する
-  // document.getElementById('eid_ori').innerHTML = window.location.origin; // プロトコル・ポート情報を含めたURLを取得する
-  // document.getElementById('eid_apN').innerHTML = window.navigator.appName; // ブラウザの正式名称を取得する
-  // document.getElementById('eid_lang').innerHTML = window.navigator.language; // ブラウザの言語情報を取得する
-  document.getElementById('eid_ua').innerHTML = window.navigator.userAgent; // ブラウザのユーザーエージェントを取得する
-  document.getElementById('eid_apV').innerHTML = window.navigator.appVersion; // ブラウザのバージョン情報を取得する
-  document.getElementById('eid_ref').innerHTML = window.document.referrer; // 直前に閲覧していたWebページのURLを取得する
-  document.getElementById('eid_width').innerHTML = window.screen.width; // 画面スクリーンの横幅を取得する
-  document.getElementById('eid_height').innerHTML = window.screen.height; // 画面スクリーンの高さを取得する
+  document.getElementById('eid_href').innerHTML = '現在開いているURL：' + window.location.href;
+  document.getElementById('eid_search').innerHTML = 'URL内のクエリ情報：' + window.location.search;
+  document.getElementById('eid_hash').innerHTML = 'URL内のハッシュ情報：' + widnow.location.hash;
+  document.getElementById('eid_ori').innerHTML = 'プロトコル・ポート情報を含めたURL：' + window.location.origin;
+  document.getElementById('eid_apN').innerHTML = 'ブラウザの正式名称：' + window.navigator.appName;
+  document.getElementById('eid_lang').innerHTML = 'ブラウザの言語情報：' + window.navigator.language;
+  document.getElementById('eid_ua').innerHTML = 'ブラウザのユーザーエージェント：' + window.navigator.userAgent;
+  document.getElementById('eid_apV').innerHTML = 'ブラウザのバージョン情報：' + window.navigator.appVersion;
+  document.getElementById('eid_ref').innerHTML = '直前に閲覧していたWebページのURL：' + window.document.referrer;
+  document.getElementById('eid_width').innerHTML = '画面スクリーンの横幅：' + window.screen.width;
+  document.getElementById('eid_height').innerHTML = '画面スクリーンの高さ：' + window.screen.height;
 });
