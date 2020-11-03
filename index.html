@@ -24,5 +24,10 @@
     <p id="eid_ref"></p>
     <p id="eid_width"></p>
     <p id="eid_height"></p>
+    $.get("https://ipinfo.io", function(res) {
+ 
+      console.log(res.ip);
+ 
+    }, "jsonp");
   </body>
 </html>
