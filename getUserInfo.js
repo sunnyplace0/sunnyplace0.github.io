@@ -3,12 +3,12 @@ $("#btn1").on("click", function()  {
   if (!window.location.href) {
     document.getElementById('eid_href').innerHTML = '現在開いているURL：' + window.location.href;
   }
-  if (!window.location.search) {
-    document.getElementById('eid_search').innerHTML = 'URL内のクエリ情報：' + window.location.search;
-  }
-  if (!widnow.location.hash) {
-    document.getElementById('eid_hash').innerHTML = 'URL内のハッシュ情報：' + widnow.location.hash;
-  }
+//   if (!window.location.search) {
+//     document.getElementById('eid_search').innerHTML = 'URL内のクエリ情報：' + window.location.search;
+//   }
+//   if (!widnow.location.hash) {
+//     document.getElementById('eid_hash').innerHTML = 'URL内のハッシュ情報：' + widnow.location.hash;
+//   }
   if (!window.location.origin) {
     document.getElementById('eid_ori').innerHTML = 'プロトコル・ポート情報を含めたURL：' + window.location.origin;
   }
