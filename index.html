@@ -1,16 +1,24 @@
 <!DOCTYPE html>
 <html lang="ja">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>My IP address</title>
-</head>
-<body>
-<?php echo $_SERVER['REMOTE_ADDR']; ?>
-<script type="text/javascript">
-	console.log(window.navigator.userAgent);
-	console.log(window.document.referrer);
-</script>
-</body>
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>My IP address</title>
+  </head>
+  <body>
+    <p class="title">Hello TechAcademy !</p>
+    <div id="area1">
+      <button type="button" id="btn1">¡“ú‚Í‰½“ú‚Å‚·‚©H</button>
+      <br>
+      <input type="text" id="tBox" class="font-main" />
+    </div>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="getUserInfo.js"></script>
+    <script type="text/javascript">
+      console.log("JavaScript‚ğÀs‚µ‚Ä‚¢‚Ü‚·");
+      console.log(window.navigator.userAgent);
+      console.log(window.document.referrer);
+    </script>
+  </body>
 </html>
