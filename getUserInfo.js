@@ -1,6 +1,6 @@
 $("#btn1").on("click", function()  {
   // jQueryを使って画面にメッセージを表示する
-  document.getElementById('eid_href').innerHTML = window.location.href; // 現在開いているURLを取得する
+  document.getElementById('eid_href').innerHTML = 'test' + window.location.href; // 現在開いているURLを取得する
   document.getElementById('eid_search').innerHTML = window.location.search; // URL内のクエリ情報を抽出して取得する
   document.getElementById('eid_hash').innerHTML = widnow.location.hash; // URL内のハッシュ情報を抽出して取得する
   document.getElementById('eid_ori').innerHTML = window.location.origin; // プロトコル・ポート情報を含めたURLを取得する
