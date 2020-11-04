@@ -5,6 +5,13 @@ $("#btn1").on("click", function()  {
   data += `現在開いているURL：${window.location.href}\n`;
   data += `ブラウザのユーザーエージェント：${window.navigator.userAgent}\n`;
   data += `直前に閲覧していたWebページのURL：${window.document.referrer}\n`;
+  
+  $.get("https://ipinfo.io", function(res) {
+ 
+      data += `IPアドレス：${res.ip}\n`;
+ 
+  }, "jsonp");
+  
   document.getElementById('eid_href').innerHTML = data;
   /*
   data += 'URL内のクエリ情報：' + window.location.search;
