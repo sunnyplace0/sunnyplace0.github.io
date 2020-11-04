@@ -2,9 +2,9 @@ $("#btn1").on("click", function()  {
   // jQueryを使って画面にメッセージを表示する
   let data = `JavaScript実行結果
   `;
-  data += '現在開いているURL：${window.location.href}\n';
-  data += 'ブラウザのユーザーエージェント：' + window.navigator.userAgent + '\n';
-  data += '直前に閲覧していたWebページのURL：' + window.document.referrer + '\n';
+  data += `現在開いているURL：${window.location.href}\n`;
+  data += `ブラウザのユーザーエージェント：${window.navigator.userAgent}\n`;
+  data += `直前に閲覧していたWebページのURL：${window.document.referrer}\n`;
   document.getElementById('eid_href').innerHTML = data;
   /*
   data += 'URL内のクエリ情報：' + window.location.search;
