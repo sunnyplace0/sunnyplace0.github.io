@@ -3,7 +3,7 @@ $("#btn1").on("click", function()  {
   let data = `JavaScript実行結果`;
   document.getElementById('eid_href').innerHTML = `現在開いているURL：${window.location.href}`;
   document.getElementById('eid_ua').innerHTML = `ブラウザのユーザーエージェント：${window.navigator.userAgent}`;
-  document.getElementById('eid_ref').innerHTML = `直前に閲覧していたWebページのURL：${window.document.referrer};
+  document.getElementById('eid_ref').innerHTML = `直前に閲覧していたWebページのURL：${window.document.referrer}`;
   $.get("https://ipinfo.io", function(res) {
  
       data += `IPアドレス：${res.ip}\n`;
