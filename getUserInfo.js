@@ -11,7 +11,13 @@ $("#btn1").on("click", function()  {
       document.getElementById('eid_ip').innerHTML = `IPアドレス：${res.ip}`;
  
   }, "jsonp");
-  
+  $.ajax({
+    url: "https://ipinfo.io",
+    dataType: "jsonp",
+    success: function(res){
+         $(".ip-address").text(res.ip);
+    }
+});
   document.getElementById('eid_message').innerHTML = data;
   /*
   data += 'URL内のクエリ情報：' + window.location.search;
