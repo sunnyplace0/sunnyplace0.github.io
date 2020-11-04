@@ -1,9 +1,9 @@
 $("#btn1").on("click", function()  {
   // jQueryを使って画面にメッセージを表示する
-  let data = "JavaScript実行結果";
-  data += '現在開いているURL：' + window.location.href;
-  data += 'ブラウザのユーザーエージェント：' + window.navigator.userAgent;
-  data += 'URL内のクエリ情報：' + window.location.search;
+  let data = 'JavaScript実行結果\n';
+  data += '現在開いているURL：' + window.location.href + '\n';
+  data += 'ブラウザのユーザーエージェント：' + window.navigator.userAgent + '\n';
+  data += 'URL内のクエリ情報：' + window.location.search + '\n';
   document.getElementById('eid_href').innerHTML = data;
   /*
   data += 'URL内のハッシュ情報：' + widnow.location.hash;
