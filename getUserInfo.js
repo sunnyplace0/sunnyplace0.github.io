@@ -4,7 +4,7 @@ $("#btn1").on("click", function()  {
   `;
   data += `現在開いているURL：${window.location.href}\n`;
   data += `ブラウザのユーザーエージェント：${window.navigator.userAgent}\n`;
-  //data += `直前に閲覧していたWebページのURL：${window.document.referrer}\n`;
+  /*data += `直前に閲覧していたWebページのURL：${window.document.referrer}\n`;*/
   
   $.get("https://ipinfo.io", function(res) {
  
