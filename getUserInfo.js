@@ -1,9 +1,11 @@
 $("#btn1").on("click", function()  {
   // jQueryを使って画面にメッセージを表示する
   let data = "";
+  alert(data);
   if (!window.location.href) {
     data += '現在開いているURL：' + window.location.href;
   }
+  alert(data);
   if (!window.location.search) {
     data += 'URL内のクエリ情報：' + window.location.search;
   }
