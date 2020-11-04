@@ -3,10 +3,11 @@ $("#btn1").on("click", function()  {
   let data = `JavaScript実行結果`;
   document.getElementById('eid_href').innerHTML = `現在開いているURL：${window.location.href}`;
   document.getElementById('eid_ua').innerHTML = `ブラウザのユーザーエージェント：${window.navigator.userAgent}`;
-  document.getElementById('eid_ref').innerHTML = `直前に閲覧していたWebページのURL：${window.document.referrer}`;
+  document.getElementById('eid_width').innerHTML = `画面スクリーンの横幅：${window.screen.width}`;
+  document.getElementById('eid_height').innerHTML = `画面スクリーンの高さ：${window.screen.height}`;
   $.get("https://ipinfo.io", function(res) {
  
-      data += `IPアドレス：${res.ip}\n`;
+      document.getElementById('eid_ip').innerHTML = `IPアドレス：${res.ip}`;
  
   }, "jsonp");
   
@@ -19,8 +20,6 @@ $("#btn1").on("click", function()  {
   document.getElementById('eid_lang').innerHTML = 'ブラウザの言語情報：' + window.navigator.language;
   document.getElementById('eid_ua').innerHTML = 'ブラウザのユーザーエージェント：' + window.navigator.userAgent;
   document.getElementById('eid_apV').innerHTML = 'ブラウザのバージョン情報：' + window.navigator.appVersion;
-  data += `直前に閲覧していたWebページのURL：${window.document.referrer}\n`;
-  document.getElementById('eid_width').innerHTML = '画面スクリーンの横幅：' + window.screen.width;
-  document.getElementById('eid_height').innerHTML = '画面スクリーンの高さ：' + window.screen.height;
+  document.getElementById('eid_ref').innerHTML = `直前に閲覧していたWebページのURL：${window.document.referrer}\n`;
   */
 });
