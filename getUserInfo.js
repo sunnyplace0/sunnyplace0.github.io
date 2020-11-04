@@ -1,9 +1,8 @@
 $("#btn1").on("click", function()  {
   // jQueryを使って画面にメッセージを表示する
-  let data = `JavaScript実行結果
-  `;
-  data += `現在開いているURL：${window.location.href}\n`;
-  data += `ブラウザのユーザーエージェント：${window.navigator.userAgent}\n`;
+  let data = `JavaScript実行結果`;
+  document.getElementById('eid_href').innerHTML = `現在開いているURL：${window.location.href}\n`;
+  document.getElementById('eid_ua').innerHTML = `ブラウザのユーザーエージェント：${window.navigator.userAgent}\n`;
   
   $.get("https://ipinfo.io", function(res) {
  
@@ -11,7 +10,7 @@ $("#btn1").on("click", function()  {
  
   }, "jsonp");
   
-  document.getElementById('eid_href').innerHTML = data;
+  document.getElementById('eid_search').innerHTML = data;
   /*
   data += 'URL内のクエリ情報：' + window.location.search;
   data += 'URL内のハッシュ情報：' + widnow.location.hash;
