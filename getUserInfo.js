@@ -1,8 +1,6 @@
 $("#btn1").on("click", function()  {
   // jQueryを使って画面にメッセージを表示する
   let data = "";
-  '現在開いているURL：' + window.location.href;
-  data += 'URL内のクエリ情報：' + window.location.search;
   if (!window.location.href) {
     data += '現在開いているURL：' + window.location.href;
   }
@@ -10,9 +8,9 @@ $("#btn1").on("click", function()  {
     data += 'URL内のクエリ情報：' + window.location.search;
   }
   document.getElementById('eid_href').innerHTML = data;
-  //if (!widnow.location.hash) {
-    document.getElementById('eid_hash').innerHTML = 'URL内のハッシュ情報：' + widnow.location.hash;
-  //}
+  if (!widnow.location.hash) {
+    data += 'URL内のハッシュ情報：' + widnow.location.hash;
+  }
   //if (!window.location.origin) {
     document.getElementById('eid_ori').innerHTML = 'プロトコル・ポート情報を含めたURL：' + window.location.origin;
   //}
