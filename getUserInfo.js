@@ -1,16 +1,16 @@
 $("#btn1").on("click", function()  {
   // jQueryを使って画面にメッセージを表示する
   let data = `JavaScript実行結果`;
-  document.getElementById('eid_href').innerHTML = `現在開いているURL：${window.location.href}\n`;
-  document.getElementById('eid_ua').innerHTML = `ブラウザのユーザーエージェント：${window.navigator.userAgent}\n`;
-  
+  document.getElementById('eid_href').innerHTML = `現在開いているURL：${window.location.href}`;
+  document.getElementById('eid_ua').innerHTML = `ブラウザのユーザーエージェント：${window.navigator.userAgent}`;
+  document.getElementById('eid_ref').innerHTML = `直前に閲覧していたWebページのURL：${window.document.referrer};
   $.get("https://ipinfo.io", function(res) {
  
       data += `IPアドレス：${res.ip}\n`;
  
   }, "jsonp");
   
-  document.getElementById('eid_search').innerHTML = data;
+  document.getElementById('eid_message').innerHTML = data;
   /*
   data += 'URL内のクエリ情報：' + window.location.search;
   data += 'URL内のハッシュ情報：' + widnow.location.hash;
